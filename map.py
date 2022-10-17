@@ -1,4 +1,5 @@
 # переведём элементы списка в верхний регистр
+
 lst = ['дело', 'тело', 'одеяло','дело', 'тело', 'одеяло','дело', 'тело', 'одеяло']
 
 # без map()
@@ -6,8 +7,8 @@ lst_upper = []
 for direction in lst:
     d = direction.upper()
     lst_upper.append(d)
-print(lst_upper)
+print(f'Без map(): \n{lst_upper}')
 
-# С map()
+# Используя map()
 with_map = list(map(str.upper, lst))
-print(with_map)
+print(f'Используя map(): \n{with_map}')
